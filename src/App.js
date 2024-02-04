@@ -59,7 +59,7 @@ const App = () => {
                 <label htmlFor="">Amount</label>
                 <div class="input-group flex-nowrap">
                   <input
-                    type="text"
+                    type="number"
                     placeholder='Enter Amount'
                     value={amount}
                     onChange={handleAmountChange} />
