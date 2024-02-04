@@ -1,0 +1,140 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #3c3b3f; /* fallback for old browsers */
+  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #536976,
+    #bbd2c5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #536976,
+    #bbd2c5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+}
+
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heading {
+  color: darkblue;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid white;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.curr_body {
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px;
+  background: url("./curr.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.curr_body .inside {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  position: relative;
+  border: 2px solid sandybrown;
+}
+
+.curr_body form {
+  position: relative;
+  left: 20%;
+}
+
+.curr_body label {
+  display: flex;
+  color: blue;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.curr_body input {
+  width: 60%;
+  padding: 4px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+  background: none;
+  color:mediumvioletred;
+  font-weight: 700;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.curr_body input::placeholder {
+  color: brown;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.curr_body select {
+  width: 60%;
+  padding: 6px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: none;
+  color: brown;
+  border-bottom: 3px solid white;
+  font-weight: 600;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+.curr_body select option {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 5px;
+  border: none;
+  padding: 5px !important;
+}
+
+.curr_body button:active {
+  background-color: gray;
+}
+
+.answer {
+  padding: 5px;
+  border-bottom: 2px solid white;
+  margin-top: 20px;
+  text-align: center;
+  color: green;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 2px solid brown;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.copyright{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 13px;
+  color: darkred;
+}
