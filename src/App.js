@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
 import axios from 'axios'
+import { LuTimerReset } from "react-icons/lu";
 
 const App = () => {
   const [amount, setAmount] = useState('')
@@ -56,11 +57,21 @@ const App = () => {
               <div className="heading">Currency Converter</div>
               <form>
                 <label htmlFor="">Amount</label>
-                <input
-                  type="text"
-                  placeholder='Enter Amount'
-                  value={amount}
-                  onChange={handleAmountChange} /><br />
+                <div class="input-group flex-nowrap">
+                  <input
+                    type="text"
+                    placeholder='Enter Amount'
+                    value={amount}
+                    onChange={handleAmountChange} />
+                  <span 
+                    className="input-group-text" 
+                    id="addon-wrapping" 
+                    onClick={()=>setAmount('')}
+                    style={{
+                      cursor : 'pointer'
+                    }}
+                    ><LuTimerReset/></span>
+                </div>
                 <label>From Currency</label>
                 <select value={fromCurrency} onChange={handleFromCurrencyChange}>
                   <option value="USD">United States Dollar</option>
