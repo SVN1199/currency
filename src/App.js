@@ -57,11 +57,11 @@ const App = () => {
               <form>
                 <label htmlFor="">Amount</label>
                 <input
-                  type="number"
+                  type="text"
                   placeholder='Enter Amount'
                   value={amount}
                   onChange={handleAmountChange} /><br />
-                <label htmlFor="">From Currency</label>
+                <label>From Currency</label>
                 <select value={fromCurrency} onChange={handleFromCurrencyChange}>
                   <option value="USD">United States Dollar</option>
                   <option value="EUR">Euro</option>
@@ -131,9 +131,9 @@ const App = () => {
                 </select>
               </form>
               <div className="answer">{`${amount || 0} ${fromCurrency} is equal to ${convertedAmt} ${toCurrency}`}</div>
-            <div className="copyright">
-              Designed By Vasanth S
-            </div>
+              <div className="copyright">
+                Designed By Vasanth S
+              </div>
             </div>
           </div>
         </div>
